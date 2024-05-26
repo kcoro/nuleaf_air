@@ -208,6 +208,14 @@ body {
     border-bottom: 1px solid #999999;
 }
 
+#subscribe-form input:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 2px solid rgb(211, 187, 170);
+}
+
 #subscribe-form button {
     font-size: 1rem;
     margin-top: 1.6rem;
@@ -277,10 +285,11 @@ body {
 
 #subscribed {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #subscribed-text {
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
     color: rgb(211, 187, 170);
 }
