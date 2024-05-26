@@ -18,6 +18,8 @@
             rel="stylesheet"
         />
         <script defer="defer" src="js/remove_overlay.js"></script>
+        <script defer="defer" src="js/countdown.js"></script>
+        <script defer="defer" src="js/subscribe.js"></script>
     </head>
     <body>
         <div id="overlay">
@@ -39,25 +41,31 @@
                     <p class="headline-text">
                         The next generation of whole home air purification
                         technology. Subscribe to be notified of our launch and gain
-                        early access to NuLeaf Air's innovative products harnesing the power of nature.
+                        early access to innovative products harnessing the power of nature.
                     </p>
-                    <form class="subscribe-form" action="">
+                    <form id="subscribe-form" action="">
                         <input type="email" placeholder="Email Address*" />
-                        <button type="submit">Subscribe</button>
+                        <button type="submit" onclick="subscribe()">Subscribe</button>
                     </form>
                 </div>
                 <div class="countdown-container">
                     <video src="videos/countdown_bg.mp4" muted loop autoplay></video>
                     <div class="countdown-content">
-                        <h2>Launching In</h2>
-                            <div class="countdown-row">
-                                <span class="countdown-section">
-                                    <span>Days</span>
-                                    <span>Hours</span>
-                                    <span>Minutes</span>
-                                    <span>Seconds</span>
-                                </span>
+                        <h2>Launching</h2>
+                            <div class="timer">
+                                <span id="timer-days"></span>
+                                <span id="timer-hours"></span>
+                                <span id="timer-minutes"></span>
+                                <span id="timer-seconds"></span>
                             </div>
+                            <div class="timer-labels">
+                                <span>Days</span>
+                                <span>Hours</span>
+                                <span>Minutes</span>
+                                <span>Seconds</span>
+                            </div>
+                            <!-- <span id="countdown-labels"> -->
+                            </span>
                     </div>
                 </div>
             </div>
